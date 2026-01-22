@@ -148,6 +148,41 @@ export default function App() {
         </div>
       </section>
 
+            {/* ===== About Me Section ===== */}
+      <section id="about" className="py-20 bg-white">
+        <div className="max-w-5xl mx-auto px-4">
+          <h2 className="text-3xl font-bold text-center">About Me</h2>
+
+          <div className="mt-8 text-gray-700 text-lg leading-relaxed space-y-5">
+            <p>
+              I am a Computer Science graduate and a Frontend Developer with
+              hands-on experience building user-friendly, scalable web
+              applications. I completed a 1-year Software Engineering training
+              that covered both frontend and backend development, giving me a
+              solid understanding of modern web systems.
+            </p>
+
+            <p>
+              I specialize more in frontend development, focusing on clean UI,
+              performance, accessibility, and good user experience. I also have
+              working knowledge of backend concepts, databases, APIs, CI/CD
+              workflows, and secure coding best practices, which helps me
+              collaborate effectively on full-stack projects.
+            </p>
+
+            <p>
+              Beyond development, I am passionate about teaching, mentoring, and
+              facilitating practical tech learning. I enjoy breaking down
+              complex concepts into simple explanations and guiding learners
+              through hands-on projects. I am interested in contributing as a
+              facilitator or ICT instructor in innovation hubs and training
+              institutions.
+            </p>
+          </div>
+        </div>
+      </section>
+
+
       {/* ===== Skills Section ===== */}
       <section id="skills" className="py-20 bg-gradient-to-tr from-blue-50 to-indigo-50">
         <div className="max-w-6xl mx-auto px-4">
