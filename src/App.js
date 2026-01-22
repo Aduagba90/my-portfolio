@@ -148,39 +148,66 @@ export default function App() {
         </div>
       </section>
 
-            {/* ===== About Me Section ===== */}
-      <section id="about" className="py-20 bg-white">
-        <div className="max-w-5xl mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center">About Me</h2>
+           {/* ===== About Me Section ===== */}
+<section id="about" className="py-20 bg-gray-50">
+  <div className="max-w-6xl mx-auto px-4">
+    <h2 className="text-3xl font-bold text-center">About Me</h2>
+    <p className="text-gray-600 text-center mt-2 max-w-2xl mx-auto">
+      A brief introduction to who I am and what I do.
+    </p>
 
-          <div className="mt-8 text-gray-700 text-lg leading-relaxed space-y-5">
-            <p>
-              I am a Computer Science graduate and a Frontend Developer with
-              hands-on experience building user-friendly, scalable web
-              applications. I completed a 1-year Software Engineering training
-              that covered both frontend and backend development, giving me a
-              solid understanding of modern web systems.
-            </p>
+    <div className="mt-12 grid md:grid-cols-2 gap-10 items-start">
+      
+      {/* Left: Text Card */}
+      <div className="bg-white p-8 rounded-2xl shadow-lg border border-gray-200 space-y-5 text-gray-700 leading-relaxed">
+        <p>
+          I am a Computer Science graduate and a Frontend Developer with
+          hands-on experience building user-friendly, scalable web
+          applications. I completed a 1-year Software Engineering training
+          that covered both frontend and backend development, giving me a
+          solid understanding of modern web systems.
+        </p>
 
-            <p>
-              I specialize more in frontend development, focusing on clean UI,
-              performance, accessibility, and good user experience. I also have
-              working knowledge of backend concepts, databases, APIs, CI/CD
-              workflows, and secure coding best practices, which helps me
-              collaborate effectively on full-stack projects.
-            </p>
+        <p>
+          I specialize more in frontend development, focusing on clean UI,
+          performance, accessibility, and good user experience. I also have
+          working knowledge of backend concepts, databases, APIs, CI/CD
+          workflows, and secure coding best practices, which helps me
+          collaborate effectively on full-stack projects.
+        </p>
+      </div>
 
-            <p>
-              Beyond development, I am passionate about teaching, mentoring, and
-              facilitating practical tech learning. I enjoy breaking down
-              complex concepts into simple explanations and guiding learners
-              through hands-on projects. I am interested in contributing as a
-              facilitator or ICT instructor in innovation hubs and training
-              institutions.
-            </p>
-          </div>
+      {/* Right: Highlights */}
+      <div className="grid gap-6">
+        <div className="bg-white p-6 rounded-2xl shadow-md border border-gray-200">
+          <h3 className="font-semibold text-lg mb-2">🎨 Frontend Focus</h3>
+          <p className="text-gray-600 text-sm leading-relaxed">
+            I focus on building clean, responsive, and accessible user
+            interfaces with great performance and user experience.
+          </p>
         </div>
-      </section>
+
+        <div className="bg-white p-6 rounded-2xl shadow-md border border-gray-200">
+          <h3 className="font-semibold text-lg mb-2">🧩 Full-Stack Awareness</h3>
+          <p className="text-gray-600 text-sm leading-relaxed">
+            Strong understanding of backend concepts, APIs, databases, CI/CD
+            workflows, and secure coding practices.
+          </p>
+        </div>
+
+        <div className="bg-white p-6 rounded-2xl shadow-md border border-gray-200">
+          <h3 className="font-semibold text-lg mb-2">👨‍🏫 Teaching & Mentorship</h3>
+          <p className="text-gray-600 text-sm leading-relaxed">
+            Passionate about mentoring, teaching, and facilitating practical
+            tech learning through hands-on projects and clear explanations.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
 
 
       {/* ===== Skills Section ===== */}
