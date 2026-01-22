@@ -148,18 +148,22 @@ export default function App() {
         </div>
       </section>
 
-           {/* ===== About Me Section ===== */}
-<section id="about" className="py-20 bg-gray-50">
+{/* ===== About Me Section ===== */}
+<section id="about" className="py-24 bg-gray-50 relative">
+  <div className="absolute inset-x-0 -top-1 h-1 bg-gradient-to-r from-blue-500 to-indigo-500"></div>
+
   <div className="max-w-6xl mx-auto px-4">
-    <h2 className="text-3xl font-bold text-center">About Me</h2>
-    <p className="text-gray-600 text-center mt-2 max-w-2xl mx-auto">
-      A brief introduction to who I am and what I do.
+    <h2 className="text-3xl md:text-4xl font-bold text-center">
+      About Me
+    </h2>
+    <p className="text-gray-600 text-center mt-3 max-w-2xl mx-auto">
+      Who I am, what I specialize in, and what I care about.
     </p>
 
-    <div className="mt-12 grid md:grid-cols-2 gap-10 items-start">
+    <div className="mt-14 grid md:grid-cols-2 gap-12 items-start">
       
-      {/* Left: Text Card */}
-      <div className="bg-white p-8 rounded-2xl shadow-lg border border-gray-200 space-y-5 text-gray-700 leading-relaxed">
+      {/* Main Bio Card */}
+      <div className="bg-white p-10 rounded-3xl shadow-xl border border-gray-200 space-y-6 text-gray-700 leading-relaxed hover:shadow-2xl transition">
         <p>
           I am a Computer Science graduate and a Frontend Developer with
           hands-on experience building user-friendly, scalable web
@@ -169,44 +173,55 @@ export default function App() {
         </p>
 
         <p>
-          I specialize more in frontend development, focusing on clean UI,
-          performance, accessibility, and good user experience. I also have
-          working knowledge of backend concepts, databases, APIs, CI/CD
-          workflows, and secure coding best practices, which helps me
-          collaborate effectively on full-stack projects.
+          I specialize in frontend development with strong attention to
+          clean UI, performance, accessibility, and user experience. I also
+          have working knowledge of backend concepts, databases, APIs,
+          CI/CD workflows, and secure coding best practices.
+        </p>
+
+        <p>
+          Beyond development, I am passionate about teaching, mentoring,
+          and facilitating practical tech learning through hands-on
+          projects and clear explanations.
         </p>
       </div>
 
-      {/* Right: Highlights */}
+      {/* Highlights */}
       <div className="grid gap-6">
-        <div className="bg-white p-6 rounded-2xl shadow-md border border-gray-200">
-          <h3 className="font-semibold text-lg mb-2">🎨 Frontend Focus</h3>
-          <p className="text-gray-600 text-sm leading-relaxed">
-            I focus on building clean, responsive, and accessible user
-            interfaces with great performance and user experience.
-          </p>
-        </div>
-
-        <div className="bg-white p-6 rounded-2xl shadow-md border border-gray-200">
-          <h3 className="font-semibold text-lg mb-2">🧩 Full-Stack Awareness</h3>
-          <p className="text-gray-600 text-sm leading-relaxed">
-            Strong understanding of backend concepts, APIs, databases, CI/CD
-            workflows, and secure coding practices.
-          </p>
-        </div>
-
-        <div className="bg-white p-6 rounded-2xl shadow-md border border-gray-200">
-          <h3 className="font-semibold text-lg mb-2">👨‍🏫 Teaching & Mentorship</h3>
-          <p className="text-gray-600 text-sm leading-relaxed">
-            Passionate about mentoring, teaching, and facilitating practical
-            tech learning through hands-on projects and clear explanations.
-          </p>
-        </div>
+        {[
+          {
+            title: "Frontend Expertise",
+            icon: "🎨",
+            text: "Building responsive, accessible, and visually polished interfaces."
+          },
+          {
+            title: "Full-Stack Mindset",
+            icon: "🧩",
+            text: "Comfortable working with APIs, databases, CI/CD, and secure systems."
+          },
+          {
+            title: "Mentorship & Teaching",
+            icon: "👨‍🏫",
+            text: "Enjoy guiding learners and breaking complex ideas into simple steps."
+          }
+        ].map((item) => (
+          <div
+            key={item.title}
+            className="bg-white p-6 rounded-2xl shadow-md border border-gray-200 hover:-translate-y-1 hover:shadow-lg transition"
+          >
+            <h3 className="font-semibold text-lg flex items-center gap-2 mb-2">
+              <span>{item.icon}</span> {item.title}
+            </h3>
+            <p className="text-gray-600 text-sm leading-relaxed">
+              {item.text}
+            </p>
+          </div>
+        ))}
       </div>
-
     </div>
   </div>
 </section>
+
 
 
 
