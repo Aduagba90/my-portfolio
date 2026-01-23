@@ -3,6 +3,7 @@ import React, { useState } from "react";
 
 export default function App() {
   const [submitted, setSubmitted] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -34,17 +35,7 @@ export default function App() {
       Kareem<span className="text-indigo-600">.</span>
     </a>
 
-    {/* Mobile Nav (shows on phone only) */}
-    <div className="flex md:hidden">
-      <a
-        href="#about"
-        className="text-sm font-medium text-blue-600"
-      >
-        About
-      </a>
-    </div>
-
-    {/* Desktop Nav (shows on md and above) */}
+    {/* Desktop Nav */}
     <div className="hidden md:flex gap-6 text-sm font-medium">
       <a href="#home" className="hover:text-blue-500 transition">Home</a>
       <a href="#about" className="hover:text-blue-500 transition">About</a>
@@ -55,16 +46,50 @@ export default function App() {
       <a href="#contact" className="hover:text-blue-500 transition">Contact</a>
     </div>
 
-    {/* CV Button */}
-    <a
-      href="/Kareem-Lukman-CV.pdf"
-      className="text-sm bg-gradient-to-r from-blue-500 to-indigo-500 text-white px-4 py-2 rounded-xl shadow-lg hover:scale-105 transition-transform"
-    >
-      Download CV
-    </a>
+    {/* Right Side */}
+    <div className="flex items-center gap-3">
+      <a
+        href="/Kareem-Lukman-CV.pdf"
+        className="hidden sm:inline-block text-sm bg-gradient-to-r from-blue-500 to-indigo-500 text-white px-4 py-2 rounded-xl shadow-lg hover:scale-105 transition-transform"
+      >
+        Download CV
+      </a>
 
+      {/* Hamburger Button (mobile) */}
+      <button
+        onClick={() => setMenuOpen(!menuOpen)}
+        className="md:hidden text-2xl focus:outline-none"
+      >
+        ☰
+      </button>
+    </div>
   </div>
+
+  {/* Mobile Menu */}
+  {menuOpen && (
+    <div className="md:hidden bg-white border-t shadow-lg">
+      {[
+        ["Home", "#home"],
+        ["About", "#about"],
+        ["Projects", "#projects"],
+        ["Skills", "#skills"],
+        ["Experience", "#experience"],
+        ["Education", "#education"],
+        ["Contact", "#contact"],
+      ].map(([label, link]) => (
+        <a
+          key={label}
+          href={link}
+          onClick={() => setMenuOpen(false)}
+          className="block px-6 py-4 text-sm font-medium hover:bg-gray-100 transition"
+        >
+          {label}
+        </a>
+      ))}
+    </div>
+  )}
 </nav>
+
 
 
       {/* ===== Hero Section ===== */}
