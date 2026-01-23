@@ -153,8 +153,7 @@ export default function App() {
 
 {/* ===== About Me Section ===== */}
 <section id="about" className="py-24 bg-gray-50 relative">
-  <div className="absolute inset-x-0 -top-1 h-1 bg-gradient-to-r from-blue-500 to-indigo-500"></div>
-
+  
   <div className="max-w-6xl mx-auto px-4">
     <h2 className="text-3xl md:text-4xl font-bold text-center">
       About Me
