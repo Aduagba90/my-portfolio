@@ -32,12 +32,15 @@ export default function App() {
             Kareem<span className="text-indigo-600">.</span>
           </a>
           <div className="hidden md:flex gap-6 text-sm font-medium">
+            <a href="#home" className="hover:text-blue-500 transition">Home</a>
+            <a href="#about" className="hover:text-blue-500 transition">About</a>
             <a href="#projects" className="hover:text-blue-500 transition">Projects</a>
             <a href="#skills" className="hover:text-blue-500 transition">Skills</a>
             <a href="#experience" className="hover:text-blue-500 transition">Experience</a>
             <a href="#education" className="hover:text-blue-500 transition">Education</a>
             <a href="#contact" className="hover:text-blue-500 transition">Contact</a>
           </div>
+
           <a
             href="/Kareem-Lukman-CV.pdf"
             className="text-sm bg-gradient-to-r from-blue-500 to-indigo-500 text-white px-4 py-2 rounded-xl shadow-lg hover:scale-105 transition-transform"
