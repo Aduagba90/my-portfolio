@@ -1,4 +1,5 @@
 // src/App.js
+import { motion } from "framer-motion";
 import React, { useState } from "react";
 
 export default function App() {
@@ -22,6 +23,11 @@ export default function App() {
       alert("Oops! Something went wrong.");
     }
   };
+
+  const fadeUp = {
+  hidden: { opacity: 0, y: 30 },
+  visible: { opacity: 1, y: 0 },
+};
 
   return (
     <div className="scroll-smooth text-gray-900 font-sans">
@@ -194,7 +200,16 @@ export default function App() {
       </section>
 
 {/* ===== About Me Section ===== */}
-<section id="about" className="py-24 bg-indigo-50">
+<motion.section
+  id="about"
+  className="py-20 bg-gray-50"
+  variants={fadeUp}
+  initial="hidden"
+  whileInView="visible"
+  viewport={{ once: true }}
+  transition={{ duration: 0.6 }}
+>
+
   <div className="max-w-6xl mx-auto px-4">
     <h2 className="text-3xl font-bold text-center">About Me</h2>
     <p className="text-gray-600 text-center mt-3 max-w-2xl mx-auto">
@@ -257,7 +272,8 @@ export default function App() {
 
     </div>
   </div>
-</section>
+</motion.section>
+
 
 
 
