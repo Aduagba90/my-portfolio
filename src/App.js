@@ -203,12 +203,11 @@ export default function App() {
 <motion.section
   id="about"
   className="py-20 bg-gray-50"
-  variants={fadeUp}
-  initial="hidden"
-  whileInView="visible"
-  viewport={{ once: true }}
-  transition={{ duration: 0.6 }}
+  initial={{ opacity: 0 }}
+  animate={{ opacity: 1 }}
+  transition={{ duration: 2 }}
 >
+
 
   <div className="max-w-6xl mx-auto px-4">
     <h2 className="text-3xl font-bold text-center">About Me</h2>
