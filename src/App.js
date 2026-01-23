@@ -26,29 +26,46 @@ export default function App() {
     <div className="scroll-smooth text-gray-900 font-sans">
 
       {/* ===== Navbar ===== */}
-      <nav className="sticky top-0 z-50 bg-white/90 backdrop-blur border-b shadow-sm">
-        <div className="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
-          <a href="#home" className="font-bold text-lg text-blue-600">
-            Kareem<span className="text-indigo-600">.</span>
-          </a>
-          <div className="hidden md:flex gap-6 text-sm font-medium">
-            <a href="#home" className="hover:text-blue-500 transition">Home</a>
-            <a href="#about" className="hover:text-blue-500 transition">About</a>
-            <a href="#projects" className="hover:text-blue-500 transition">Projects</a>
-            <a href="#skills" className="hover:text-blue-500 transition">Skills</a>
-            <a href="#experience" className="hover:text-blue-500 transition">Experience</a>
-            <a href="#education" className="hover:text-blue-500 transition">Education</a>
-            <a href="#contact" className="hover:text-blue-500 transition">Contact</a>
-          </div>
+<nav className="sticky top-0 z-50 bg-white/90 backdrop-blur border-b shadow-sm">
+  <div className="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+    
+    {/* Logo */}
+    <a href="#home" className="font-bold text-lg text-blue-600">
+      Kareem<span className="text-indigo-600">.</span>
+    </a>
 
-          <a
-            href="/Kareem-Lukman-CV.pdf"
-            className="text-sm bg-gradient-to-r from-blue-500 to-indigo-500 text-white px-4 py-2 rounded-xl shadow-lg hover:scale-105 transition-transform"
-          >
-            Download CV
-          </a>
-        </div>
-      </nav>
+    {/* Mobile Nav (shows on phone only) */}
+    <div className="flex md:hidden">
+      <a
+        href="#about"
+        className="text-sm font-medium text-blue-600"
+      >
+        About
+      </a>
+    </div>
+
+    {/* Desktop Nav (shows on md and above) */}
+    <div className="hidden md:flex gap-6 text-sm font-medium">
+      <a href="#home" className="hover:text-blue-500 transition">Home</a>
+      <a href="#about" className="hover:text-blue-500 transition">About</a>
+      <a href="#projects" className="hover:text-blue-500 transition">Projects</a>
+      <a href="#skills" className="hover:text-blue-500 transition">Skills</a>
+      <a href="#experience" className="hover:text-blue-500 transition">Experience</a>
+      <a href="#education" className="hover:text-blue-500 transition">Education</a>
+      <a href="#contact" className="hover:text-blue-500 transition">Contact</a>
+    </div>
+
+    {/* CV Button */}
+    <a
+      href="/Kareem-Lukman-CV.pdf"
+      className="text-sm bg-gradient-to-r from-blue-500 to-indigo-500 text-white px-4 py-2 rounded-xl shadow-lg hover:scale-105 transition-transform"
+    >
+      Download CV
+    </a>
+
+  </div>
+</nav>
+
 
       {/* ===== Hero Section ===== */}
       <header
@@ -152,7 +169,7 @@ export default function App() {
       </section>
 
 {/* ===== About Me Section ===== */}
-<section id="about" className="py-24 bg-gray-50">
+<section id="about" className="py-24 bg-indigo-50">
   <div className="max-w-6xl mx-auto px-4">
     <h2 className="text-3xl font-bold text-center">About Me</h2>
     <p className="text-gray-600 text-center mt-3 max-w-2xl mx-auto">
