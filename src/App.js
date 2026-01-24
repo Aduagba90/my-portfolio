@@ -295,11 +295,11 @@ export default function App() {
 
       {/* ===== Education Section ===== */}
       <section id="education" className="py-20">
+        <h2 className="text-3xl font-bold text-center">Education</h2>
   <div className="max-w-6xl mx-auto px-4">
-    <h2 className="text-3xl font-bold text-center">Education</h2>
     <ul className="mt-6 space-y-2 text-gray-700 text-center">
       <li><strong>BSc, Computer Science</strong> — Kwara State University (2016 – 2020)</li>
-      <li><strong>Diploma, Computer Science</strong> — Bayero University Kano (2012 – 2014)</li>
+      <li><strong>Diploma in Computer Science</strong> — Bayero University Kano (2012 – 2014)</li>
       <li><strong>Diploma in Computer Engineering & Networking</strong> — TAQWATECH (2009 – 2010)</li>
       <li><strong>Software Engineering</strong> — Semicolon Africa (2024 – 2025)</li>
       <li><strong>NYSC Exemption Certificate</strong> (2020 – 2021)</li>
