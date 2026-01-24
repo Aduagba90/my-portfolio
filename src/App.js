@@ -279,7 +279,7 @@ export default function App() {
     <div className="mt-8 bg-white p-6 rounded-2xl shadow-lg border border-gray-200 space-y-4">
       <h3 className="font-semibold text-lg">
         Semicolon Africa — Software Engineer Trainee
-        <span className="text-gray-500 font-normal"> (2024 – Present)</span>
+        <span className="text-gray-500 font-normal"> (2024 – 2025)</span>
       </h3>
       <ul className="list-disc ml-6 text-gray-700 space-y-1">
         <li>Frontend development (React, HTML, CSS, Tailwind) with some backend exposure (Spring Boot).</li>
@@ -295,17 +295,18 @@ export default function App() {
 
       {/* ===== Education Section ===== */}
       <section id="education" className="py-20">
-        <div className="max-w-6xl mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center">Education</h2>
-          <ul className="mt-6 space-y-2 text-gray-700 text-center">
-            <li><strong>BSc</strong>, Computer Science — Kwara State University (2016 – 2020)</li>
-            <li>Bayero University Kano — Diploma in Computer Science (2012 – 2014)</li>
-            <li>TAQWATECH — Diploma in Computer Engineering & Networking (2009 – 2010)</li>
-            <li>Semicolon Africa — Software Engineering (2024 – 2025)</li>
-            <li>NYSC — Exemption Certificate (2020 – 2021)</li>
-          </ul>
-        </div>
-      </section>
+  <div className="max-w-6xl mx-auto px-4">
+    <h2 className="text-3xl font-bold text-center">Education</h2>
+    <ul className="mt-6 space-y-2 text-gray-700 text-center">
+      <li><strong>BSc, Computer Science</strong> — Kwara State University (2016 – 2020)</li>
+      <li><strong>Diploma, Computer Science</strong> — Bayero University Kano (2012 – 2014)</li>
+      <li><strong>Diploma in Computer Engineering & Networking</strong> — TAQWATECH (2009 – 2010)</li>
+      <li><strong>Software Engineering</strong> — Semicolon Africa (2024 – 2025)</li>
+      <li><strong>NYSC Exemption Certificate</strong> (2020 – 2021)</li>
+    </ul>
+  </div>
+</section>
+
 
       {/* ===== Contact Section ===== */}
       <section id="contact" className="py-20 bg-gray-50">
