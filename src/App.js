@@ -24,10 +24,6 @@ export default function App() {
     }
   };
 
-  const fadeUp = {
-  hidden: { opacity: 0, y: 30 },
-  visible: { opacity: 1, y: 0 },
-};
 
   return (
     <div className="scroll-smooth text-gray-900 font-sans">
@@ -200,15 +196,7 @@ export default function App() {
       </section>
 
 {/* ===== About Me Section ===== */}
-<motion.section
-  id="about"
-  className="py-20 bg-gray-50"
-  initial={{ opacity: 0 }}
-  animate={{ opacity: 1 }}
-  transition={{ duration: 2 }}
->
-
-
+<section id="about" className="py-20 bg-gray-50">
   <div className="max-w-6xl mx-auto px-4">
     <h2 className="text-3xl font-bold text-center">About Me</h2>
     <p className="text-gray-600 text-center mt-3 max-w-2xl mx-auto">
@@ -271,9 +259,7 @@ export default function App() {
 
     </div>
   </div>
-</motion.section>
-
-
+</section>
 
 
       {/* ===== Skills Section ===== */}
