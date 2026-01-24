@@ -274,24 +274,24 @@ export default function App() {
 
       {/* ===== Experience Section ===== */}
       <section id="experience" className="py-20 bg-gray-50">
-        <div className="max-w-6xl mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center">Experience</h2>
-          <div className="mt-8 bg-white p-6 rounded-2xl shadow-lg border border-gray-200 space-y-4">
-            <h3 className="font-semibold text-lg">
-              Semicolon Africa — Software Engineer Trainee
-              <span className="text-gray-500 font-normal"> (2024 – Present)</span>
-            </h3>
-            <ul className="list-disc ml-6 text-gray-700 space-y-1">
-              <li>Contributed to full-stack development with stronger focus on frontend (React, HTML, CSS, Tailwind) and backend using Spring Boot.</li>
-              <li>Built RESTful APIs with validation and structured error handling.</li>
-              <li>Implemented CI/CD pipelines with GitHub Actions; deployed applications to Render and Heroku.</li>
-              <li>Worked with relational and NoSQL databases including PostgreSQL, MySQL, and MongoDB.</li>
-              <li>Wrote unit and integration tests (JUnit) while following TDD best practices.</li>
-            </ul>
+  <div className="max-w-6xl mx-auto px-4">
+    <h2 className="text-3xl font-bold text-center">Experience</h2>
+    <div className="mt-8 bg-white p-6 rounded-2xl shadow-lg border border-gray-200 space-y-4">
+      <h3 className="font-semibold text-lg">
+        Semicolon Africa — Software Engineer Trainee
+        <span className="text-gray-500 font-normal"> (2024 – Present)</span>
+      </h3>
+      <ul className="list-disc ml-6 text-gray-700 space-y-1">
+        <li>Frontend development (React, HTML, CSS, Tailwind) with some backend exposure (Spring Boot).</li>
+        <li>Built RESTful APIs with validation and error handling.</li>
+        <li>CI/CD with GitHub Actions; deployed to Render/Heroku.</li>
+        <li>Worked with PostgreSQL, MySQL, and MongoDB databases.</li>
+        <li>Wrote unit and integration tests (JUnit), following TDD best practices.</li>
+      </ul>
+    </div>
+  </div>
+</section>
 
-          </div>
-        </div>
-      </section>
 
       {/* ===== Education Section ===== */}
       <section id="education" className="py-20">
