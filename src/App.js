@@ -109,9 +109,9 @@ export default function App() {
               Kareem Lukman Aduagba
             </h1>
             <p className="text-white/90 text-lg leading-relaxed animate-fadeIn delay-400">
-              I build scalable, efficient, and user-friendly applications.
-              Strong in backend & frontend development, databases, CI/CD, and
-              secure coding best practices.
+              Frontend-focused Software Engineer building scalable, user-friendly web applications, 
+              with solid working knowledge of backend systems, databases, CI/CD pipelines, and secure 
+              coding practices, and a passion for guiding learners through practical, hands-on development.
             </p>
             <div className="flex flex-wrap gap-3 mt-6 animate-fadeIn delay-600">
               <a
@@ -208,25 +208,24 @@ export default function App() {
       {/* Main Description */}
       <div className="bg-white p-8 rounded-2xl shadow-lg border border-gray-200 space-y-6 text-gray-700 leading-relaxed">
         <p>
-          I am a Computer Science graduate and a Frontend Developer with
-          hands-on experience building user-friendly, scalable web
-          applications. I completed a 1-year Software Engineering training
-          that covered both frontend and backend development, giving me a
-          solid understanding of modern web systems.
+           I am a Computer Science graduate and a Frontend Developer with hands-on
+            experience building user-friendly, scalable web applications. I completed
+            a one-year Software Engineering training covering both frontend and backend
+            development, which gave me a solid understanding of modern web systems.
         </p>
 
         <p>
-          I specialize more in frontend development, focusing on clean UI,
-          performance, accessibility, and great user experience. I also have
-          working knowledge of backend concepts, databases, APIs, CI/CD
-          workflows, and secure coding best practices, which helps me
-          collaborate effectively on full-stack projects.
+          I specialize in frontend development, with a strong focus on clean UI,
+          performance, accessibility, and great user experience. I also have working
+          knowledge of backend concepts, databases, APIs, CI/CD workflows, and secure
+          coding best practices, enabling effective collaboration on full-stack
+          projects.
         </p>
 
         <p>
           Beyond development, I am passionate about teaching, mentoring, and
-          facilitating practical tech learning through hands-on projects and
-          clear explanations.
+          facilitating practical tech learning through hands-on projects and clear,
+          structured explanations.
         </p>
       </div>
 
@@ -243,8 +242,8 @@ export default function App() {
         <div className="bg-white p-6 rounded-2xl shadow-md border border-gray-200 hover:shadow-lg transition">
           <h3 className="font-semibold text-lg mb-2">🧩 Full-Stack Awareness</h3>
           <p className="text-gray-600 text-sm leading-relaxed">
-            Strong understanding of backend systems, APIs, databases,
-            CI/CD workflows, and secure coding practices.
+            Solid working knowledge of backend systems, APIs, databases, CI/CD workflows,
+            and secure coding practices.
           </p>
         </div>
 
@@ -295,12 +294,13 @@ export default function App() {
               <span className="text-gray-500 font-normal"> (2024 – Present)</span>
             </h3>
             <ul className="list-disc ml-6 text-gray-700 space-y-1">
-              <li>Full-Stack development (Spring Boot, React, HTML, CSS, Tailwind).</li>
-              <li>Built RESTful APIs with validation and error handling.</li>
-              <li>CI/CD with GitHub Actions; deployed to Render/Heroku.</li>
-              <li>Worked with PostgreSQL, MySQL, MongoDB.</li>
-              <li>Wrote unit/integration tests (JUnit), followed TDD best practices.</li>
+              <li>Contributed to full-stack development with stronger focus on frontend (React, HTML, CSS, Tailwind) and backend using Spring Boot.</li>
+              <li>Built RESTful APIs with validation and structured error handling.</li>
+              <li>Implemented CI/CD pipelines with GitHub Actions; deployed applications to Render and Heroku.</li>
+              <li>Worked with relational and NoSQL databases including PostgreSQL, MySQL, and MongoDB.</li>
+              <li>Wrote unit and integration tests (JUnit) while following TDD best practices.</li>
             </ul>
+
           </div>
         </div>
       </section>
@@ -310,9 +310,9 @@ export default function App() {
         <div className="max-w-6xl mx-auto px-4">
           <h2 className="text-3xl font-bold text-center">Education</h2>
           <ul className="mt-6 space-y-2 text-gray-700 text-center">
-            <li>Kwara State University — BSc, Computer Science (2016 – 2020)</li>
+            <li><strong>BSc</strong>, Computer Science — Kwara State University (2016 – 2020)</li>
             <li>Bayero University Kano — Diploma, Computer Science (2012 – 2014)</li>
-            <li>TAQWATECH — Diploma, Computer Engineering & Networking (2009 – 2010)</li>
+            <li>TAQWATECH — Diploma in Computer Engineering & Networking (2009 – 2010)</li>
             <li>Semicolon Africa — Software Engineering (2024 – 2025)</li>
             <li>NYSC — Exemption Certificate (2020 – 2021)</li>
           </ul>
