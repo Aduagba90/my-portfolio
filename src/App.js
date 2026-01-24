@@ -195,7 +195,6 @@ export default function App() {
         </div>
       </section>
 
-{/* ===== About Me Section ===== */}
 <section id="about" className="py-20 bg-gray-50">
   <div className="max-w-6xl mx-auto px-4">
     <h2 className="text-3xl font-bold text-center">About Me</h2>
@@ -208,24 +207,15 @@ export default function App() {
       {/* Main Description */}
       <div className="bg-white p-8 rounded-2xl shadow-lg border border-gray-200 space-y-6 text-gray-700 leading-relaxed">
         <p>
-           I am a Computer Science graduate and a Frontend Developer with hands-on
-            experience building user-friendly, scalable web applications. I completed
-            a one-year Software Engineering training covering both frontend and backend
-            development, which gave me a solid understanding of modern web systems.
+          I am a Computer Science graduate and a Frontend Developer with hands-on experience building user-friendly, scalable web applications. I completed a 1-year Software Engineering training that covered both frontend and backend development, giving me a solid understanding of modern web systems.
         </p>
 
         <p>
-          I specialize in frontend development, with a strong focus on clean UI,
-          performance, accessibility, and great user experience. I also have working
-          knowledge of backend concepts, databases, APIs, CI/CD workflows, and secure
-          coding best practices, enabling effective collaboration on full-stack
-          projects.
+          I specialize in frontend development, focusing on clean UI, performance, accessibility, and great user experience. I also have working knowledge of backend concepts, databases, APIs, and CI/CD workflows, which helps me collaborate effectively on full-stack projects.
         </p>
 
         <p>
-          Beyond development, I am passionate about teaching, mentoring, and
-          facilitating practical tech learning through hands-on projects and clear,
-          structured explanations.
+          Beyond development, I am passionate about teaching, mentoring, and facilitating practical tech learning through hands-on projects and clear explanations.
         </p>
       </div>
 
@@ -234,24 +224,21 @@ export default function App() {
         <div className="bg-white p-6 rounded-2xl shadow-md border border-gray-200 hover:shadow-lg transition">
           <h3 className="font-semibold text-lg mb-2">🎨 Frontend Focus</h3>
           <p className="text-gray-600 text-sm leading-relaxed">
-            Clean UI, performance, accessibility, and responsive design are
-            at the core of my frontend work.
+            Clean UI, performance, accessibility, and responsive design are at the core of my frontend work.
           </p>
         </div>
 
         <div className="bg-white p-6 rounded-2xl shadow-md border border-gray-200 hover:shadow-lg transition">
           <h3 className="font-semibold text-lg mb-2">🧩 Full-Stack Awareness</h3>
           <p className="text-gray-600 text-sm leading-relaxed">
-            Solid working knowledge of backend systems, APIs, databases, CI/CD workflows,
-            and secure coding practices.
+            Understanding of backend systems, APIs, databases, CI/CD workflows, and secure coding practices.
           </p>
         </div>
 
         <div className="bg-white p-6 rounded-2xl shadow-md border border-gray-200 hover:shadow-lg transition">
           <h3 className="font-semibold text-lg mb-2">👨‍🏫 Teaching & Mentorship</h3>
           <p className="text-gray-600 text-sm leading-relaxed">
-            Passionate about mentoring, facilitating learning, and guiding
-            developers through hands-on projects.
+            Passionate about mentoring, facilitating learning, and guiding developers through hands-on projects.
           </p>
         </div>
       </div>
@@ -259,6 +246,7 @@ export default function App() {
     </div>
   </div>
 </section>
+
 
 
       {/* ===== Skills Section ===== */}
@@ -311,7 +299,7 @@ export default function App() {
           <h2 className="text-3xl font-bold text-center">Education</h2>
           <ul className="mt-6 space-y-2 text-gray-700 text-center">
             <li><strong>BSc</strong>, Computer Science — Kwara State University (2016 – 2020)</li>
-            <li>Bayero University Kano — Diploma, Computer Science (2012 – 2014)</li>
+            <li>Bayero University Kano — Diploma in Computer Science (2012 – 2014)</li>
             <li>TAQWATECH — Diploma in Computer Engineering & Networking (2009 – 2010)</li>
             <li>Semicolon Africa — Software Engineering (2024 – 2025)</li>
             <li>NYSC — Exemption Certificate (2020 – 2021)</li>
