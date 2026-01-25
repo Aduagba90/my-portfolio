@@ -358,7 +358,7 @@ export default function App() {
 
 
 <a
-  href="/Kareem-Lukman-CV.pdf"
+  href="/Kareem_Lukman_Aduagba_CV.pdf"
   onClick={() => {
     setDownloading(true);
     setTimeout(() => setDownloading(false), 2000);
