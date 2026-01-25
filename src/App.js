@@ -6,6 +6,9 @@ export default function App() {
   const [submitted, setSubmitted] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
   const [downloading, setDownloading] = useState(false);
+  const [showCVButton, setShowCVButton] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0);
+
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -24,6 +27,21 @@ export default function App() {
       alert("Oops! Something went wrong.");
     }
   };
+
+  React.useEffect(() => {
+  const handleScroll = () => {
+    if (window.scrollY > lastScrollY) {
+      setShowCVButton(false); // scrolling down
+    } else {
+      setShowCVButton(true); // scrolling up
+    }
+    setLastScrollY(window.scrollY);
+  };
+
+  window.addEventListener("scroll", handleScroll);
+  return () => window.removeEventListener("scroll", handleScroll);
+}, [lastScrollY]);
+
 
 
   return (
@@ -356,36 +374,40 @@ export default function App() {
       {/* Floating Download CV (Mobile only) */}
 
 
-<a
-  href="/Kareem-Lukman-CV.pdf"
-  onClick={() => {
-    setDownloading(true);
-    setTimeout(() => setDownloading(false), 2000);
-  }}
-  className="
-    fixed bottom-5 left-1/2 -translate-x-1/2
-    sm:hidden
-    bg-gradient-to-r from-blue-500 to-indigo-500
-    text-white
-    px-6 py-3
-    rounded-full
-    shadow-2xl
-    text-sm font-medium
-    flex items-center gap-2
-    animate-pulse
-    hover:animate-none hover:scale-105
-    transition-transform
-    z-50
-  "
->
-  <span className={downloading ? "" : "animate-bounce"}>
-    {downloading ? "⏳" : "⬇️"}
-  </span>
+{showCVButton && (
+  <a
+    href="/Kareem-Lukman-CV.pdf"
+    onClick={() => {
+      console.log("CV Download clicked");
+      setDownloading(true);
+      setTimeout(() => setDownloading(false), 2000);
+    }}
+    className="
+      fixed bottom-5 left-1/2 -translate-x-1/2
+      sm:hidden
+      backdrop-blur-md bg-white/20
+      border border-white/30
+      text-white
+      px-6 py-3
+      rounded-full
+      shadow-2xl
+      text-sm font-medium
+      flex items-center gap-2
+      animate-pulse
+      hover:animate-none hover:scale-105
+      transition-all
+      z-50
+    "
+  >
+    <span className={downloading ? "" : "animate-bounce"}>
+      {downloading ? "⏳" : "⬇️"}
+    </span>
 
-  <span>
-    {downloading ? "Downloading..." : "Download CV"}
-  </span>
-</a>
+    <span>
+      {downloading ? "Downloading..." : "Download CV"}
+    </span>
+  </a>
+)}
 
 
     </div>
