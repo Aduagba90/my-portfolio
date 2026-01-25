@@ -52,7 +52,7 @@ export default function App() {
     <div className="flex items-center gap-3">
       <a
         href="/Kareem-Lukman-CV.pdf"
-        className="inline-block text-sm bg-gradient-to-r from-blue-500 to-indigo-500 text-white px-4 py-2 rounded-xl shadow-lg hover:scale-105 transition-transform"
+        className="inline-block text-sm sm:text-base px-3 sm:px-4 py-2 rounded-xl bg-gradient-to-r from-blue-500 to-indigo-500 text-white shadow-lg hover:scale-105 transition-transform"
       >
         Download CV
       </a>
