@@ -358,7 +358,7 @@ export default function App() {
   href="/Kareem-Lukman-CV.pdf"
   className="fixed bottom-5 right-5 sm:hidden bg-gradient-to-r from-blue-500 to-indigo-500 text-white px-5 py-3 rounded-full shadow-2xl text-sm font-medium flex items-center gap-2 animate-pulse hover:animate-none hover:scale-105 transition-transform z-50"
 >
-  <span className="animate-pulse">⬇️</span>
+  <span className="animate-bounce">⬇️</span>
   <span>Download CV</span>
 </a>
 
