@@ -5,6 +5,7 @@ import React, { useState } from "react";
 export default function App() {
   const [submitted, setSubmitted] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
+  const [downloading, setDownloading] = useState(false);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -354,8 +355,13 @@ export default function App() {
 
       {/* Floating Download CV (Mobile only) */}
 
+
 <a
   href="/Kareem-Lukman-CV.pdf"
+  onClick={() => {
+    setDownloading(true);
+    setTimeout(() => setDownloading(false), 2000);
+  }}
   className="
     fixed bottom-5 left-1/2 -translate-x-1/2
     sm:hidden
@@ -372,10 +378,14 @@ export default function App() {
     z-50
   "
 >
-  <span className="animate-bounce">⬇️</span>
-  <span>Download CV</span>
-</a>
+  <span className={downloading ? "" : "animate-bounce"}>
+    {downloading ? "⏳" : "⬇️"}
+  </span>
 
+  <span>
+    {downloading ? "Downloading..." : "Download CV"}
+  </span>
+</a>
 
 
     </div>
